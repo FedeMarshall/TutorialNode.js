@@ -1,0 +1,26 @@
+{
+  "name": "library",
+  "description": "Code for the Pluralsight Node.js and express course",
+  "main": "app.js",
+  "authors": [
+    "Federico Canet"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Node.js",
+    "express",
+    "Pluralsight"
+  ],
+  "homepage": "https://github.com/FedeMarshall/TutorialNode.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3"
+  }
+}
