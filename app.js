@@ -6,10 +6,12 @@ var app = express();
 var port = process.env.PORT || 8888;
 
 app.use(express.static('public'));
-app.use(express.static('src/views'));
+app.set('views', './src/views');
+
+app.set('view engine', 'ejs');
 
 app.get('/', function(req, res) {
-    res.send('Hello, this is Dog!');
+    res.render('index', {title: 'Hello from render', list:['a','b','c']});
 });
 
 app.listen(port, function(error) {
